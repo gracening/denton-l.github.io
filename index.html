@@ -3,20 +3,21 @@
 	<head>
 		<title>Denton Liu - This Needs a New Title</title>
 		<meta charset=”UTF-8”>
+		<link rel="icon" href="resources/favicon.ico" />
 		<link rel="stylesheet" href="resources/style.css" />
 		<link rel="stylesheet" href="resources/index.css" />
 	</head>
 	<body>
 		<header>
-			<ul>
+			<ul id="navbar">
 				<li class="button selected"><a href="index.html">Home</a></li>
 				<li class="button"><a href="about.html">About</a></li>
 				<li class="button"><a href="contact.html">Contact</a></li>
-				<li class="button"><a href="">Resumé</a></li>
+				<li class="button"><a href="">Resum&eacute;</a></li>
 			</ul>
 		</header>
 		<div id="container">
-			<pre>
+			<pre id="name">
 ######  ####### #     # ####### ####### #     #    #       ### #     # 
 #     # #       ##    #    #    #     # ##    #    #        #  #     # 
 #     # #       # #   #    #    #     # # #   #    #        #  #     # 
@@ -25,10 +26,20 @@
 #     # #       #    ##    #    #     # #    ##    #        #  #     # 
 ######  ####### #     #    #    ####### #     #    ####### ###  #####  
 			</pre>
-			<p id="paragraph">
-				My name is Denton and I am not a web designer!
-			</p>
+			<div id="tagline">Software Engineer</div>
+			<div id="content">
+				<p>
+					My name is Denton and I am not a web designer!
+				</p>
+			</div>
 			<div><a href="about.html" class="button">Learn more!</a></div>
+		</div>
+		<div id="footer">
+			<ul id="profiles">
+				<li><a href="https://github.com/Denton-L/"><img src="resources/github.png" height=32 /></a></li>
+				<li><a href="about:blank"><img src="resources/linkedin.png" height=32 /></a></li>
+			</ul>
+			<div id="copyright"><sup>&copy; Denton Liu, 2015</sup></div>
 		</div>
 	</body>
 </html>
