@@ -1,0 +1,16 @@
+#name {
+	text-align: center;
+}
+
+#container {
+	border: 1px dashed lime;
+	text-align: center;
+}
+
+#container * {
+	margin: 2em;
+}
+
+#paragraph {
+	text-align: left;
+}
