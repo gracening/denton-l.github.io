@@ -1,11 +1,12 @@
+var _objects;
+var _strings;
+var _interval;
+
 window.onload = function() {
-	positionFooter();
 	animateTyping(document.getElementsByClassName("typetarget"));
 }
 
-function positionFooter() {
-	document.getElementById("content").style.paddingBottom = document.getElementsByTagName("footer")[0].offsetHeight +"px";
-}
+window.onclick = stopTyping;
 
 function animateTyping(objects) {
 	if (objects.length <= 0) {
@@ -18,12 +19,14 @@ function animateTyping(objects) {
 		strings[i] = objects[i].innerText;
 		objects[i].innerText = "";
 	}
+	_objects = [].slice.call(objects);
+	_strings = [].slice.call(strings);
 	type([].slice.call(objects), strings);	
 }
 
 function type(objects, strings) {
 	var i = 0;
-	var interval = setInterval(function() {
+	var interval = _interval = setInterval(function() {
 			objects[0].innerText = strings[0].substring(0, ++i);
 			objects[0].innerHTML += "<span id=\"cursor\">&#9608;</span>";
 			if (i >= strings[0].length) {
@@ -37,7 +40,7 @@ function type(objects, strings) {
 					type(objects, strings);
 				}
 			}
-		}, 10);
+		}, 2);
 }
 
 function flashCursor() {
@@ -49,4 +52,13 @@ function flashCursor() {
 		document.getElementById("cursor").style.display = on ? "none" : "inline";
 		on = !on;
 	}, 500);
+}
+
+function stopTyping() {
+	clearInterval(_interval);
+	for (var i = 0; i < _objects.length; i++) {
+		_objects[i].innerText = _strings[i];
+	}
+	_objects[_objects.length - 1].innerHTML += "<span id=\"cursor\">&#9608;</span>";
+	flashCursor();
 }
