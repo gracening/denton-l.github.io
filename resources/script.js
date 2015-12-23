@@ -40,7 +40,7 @@ function type(objects, strings) {
 					type(objects, strings);
 				}
 			}
-		}, 2);
+		}, 10);
 }
 
 function flashCursor() {
