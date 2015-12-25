@@ -1,0 +1,12 @@
+.projectbutton {
+		background-color: lime;
+		width: 100px;
+}
+
+#leftbutton {
+		float: left;
+}
+
+#rightbutton {
+		float: right;
+}
