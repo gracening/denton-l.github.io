@@ -1,15 +1,29 @@
-#projectimage {
+#imagesection {
 		height: 30em;
 }
 
-#projectimage img {
+#imagesection img {
 		height: inherit;
-		width: auto;
 }
 
 .projectbutton {
 		background-color: lime;
-		height: 50%;
+}
+
+.projectbutton .arrownormal {
+		display: block;
+}
+
+.projectbutton .arrowhover {
+		display: none;
+}
+
+.projectbutton:hover .arrownormal {
+		display: none;
+}
+
+.projectbutton:hover .arrowhover {
+		display: block;
 }
 
 #leftbutton {
