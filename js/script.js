@@ -36,7 +36,7 @@ function type(objects, strings) {
 					type(objects, strings);
 				}
 			}
-		}, 10);
+		}, 15);
 }
 
 function stopTyping() {
