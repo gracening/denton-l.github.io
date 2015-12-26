@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="/resources/style.css" />
 		<script src="/resources/script.js" defer></script>
 		<link rel="stylesheet" href="/resources/projects.css" />
+		<script src="/resources/projectlist.json" defer></script>
 		<script src="/resources/projects.js" defer></script>
 	</head>
 	<body><div id="outerwrapper">
@@ -23,11 +24,11 @@
 		<div id="content">
 			<h1>Projects</h1><hr />
 			<div id="imagesection">
-					<span id="leftbutton" class="projectbutton">
+					<span id="leftbutton" class="projectbutton" onclick="previousProject()">
 							<img src="/resources/leftchevron.svg" class="arrownormal" />
 							<img src="/resources/invertleftchevron.svg" class="arrowhover" />
 					</span>
-					<span id="rightbutton" class="projectbutton">
+					<span id="rightbutton" class="projectbutton" onclick="nextProject()">
 							<img src="/resources/rightchevron.svg" class="arrownormal" />
 							<img src="/resources/invertrightchevron.svg" class="arrowhover" />
 					</span>
@@ -35,8 +36,8 @@
 			</div>
 			<hr />
 			<div id="textsection">
-					<h2 id="projecttitle">Test</h2>
-					<div id="projectdescription"><p>This is test stuff</p></div>
+					<h2 id="projecttitle" class="typetarget"></h2>
+					<div id="projectdescription"></div>
 			</div>
 		</div>
 		<div id="footerspacer"></div></div>

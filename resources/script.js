@@ -3,7 +3,7 @@ var _strings;
 var _interval;
 
 window.onload = function() {
-	animateTyping(document.getElementsByClassName("typetarget"));
+	animateTyping($(".typetarget"));
 }
 
 window.onclick = stopTyping;
@@ -30,9 +30,7 @@ function type(objects, strings) {
 			objects[0].innerHTML += "<span id=\"cursor\">&#9608;</span>";
 			if (i >= strings[0].length) {
 				clearInterval(interval);
-				if (objects.length == 1) {
-					flashCursor();
-				} else {
+				if (objects.length != 1) {
 					objects[0].innerText = strings[0];
 					objects.splice(0, 1)
 					strings.splice(0, 1)
