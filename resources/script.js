@@ -14,7 +14,6 @@ function animateTyping(objects) {
 	}
 	var strings = [];
 	for (var i = 0; i < objects.length; i++) {
-		objects[i].style.minHeight = objects[i].offsetHeight +"px";
 		strings[i] = objects[i].innerText;
 		objects[i].innerText = "";
 	}
