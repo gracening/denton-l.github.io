@@ -1,5 +1,15 @@
+#projectimage {
+		height: 30em;
+}
+
+#projectimage img {
+		height: inherit;
+		width: auto;
+}
+
 .projectbutton {
 		background-color: lime;
+		height: 50%;
 }
 
 #leftbutton {
