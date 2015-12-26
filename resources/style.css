@@ -26,6 +26,10 @@ header {
 	text-align: left;
 }
 
+.typetarget {
+		padding: 1px 0;
+}
+
 #outerwrapper {
 	min-height: 95%;
 	margin-bottom: -4em;
