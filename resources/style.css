@@ -26,10 +26,6 @@ header {
 	text-align: left;
 }
 
-.typetarget {
-		padding: 1px 0;
-}
-
 #outerwrapper {
 	min-height: 95%;
 	margin-bottom: -4em;
@@ -71,6 +67,19 @@ footer {
 .rightimage {
 	float: right;
 	padding: 2em;
+}
+
+@keyframes blink {
+		0% {opacity: 0;}
+		50% {opacity: 1;}
+		100% {opacity: 0;}
+}
+
+#cursor {
+		animation-name: blink;
+		animation-duration: 1s;
+		animation-timing-function: steps(1);
+		animation-iteration-count: infinite;
 }
 
 #content {

@@ -10,7 +10,6 @@ window.onclick = stopTyping;
 
 function animateTyping(objects) {
 	if (objects.length <= 0) {
-		flashCursor();
 		return;
 	}
 	var strings = [];
@@ -43,22 +42,10 @@ function type(objects, strings) {
 		}, 10);
 }
 
-function flashCursor() {
-	if (document.getElementById("cursor") == null) {
-		return;
-	}
-	var on = true;
-	setInterval(function() {
-		document.getElementById("cursor").style.display = on ? "none" : "inline";
-		on = !on;
-	}, 500);
-}
-
 function stopTyping() {
 	clearInterval(_interval);
 	for (var i = 0; i < _objects.length; i++) {
 		_objects[i].innerText = _strings[i];
 	}
 	_objects[_objects.length - 1].innerHTML += "<span id=\"cursor\">&#9608;</span>";
-	flashCursor();
 }
