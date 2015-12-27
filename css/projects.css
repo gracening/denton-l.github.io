@@ -1,13 +1,14 @@
 #imagesection {
 		height: 30em;
-}
-
-#imagesection img {
-		height: inherit;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		background-position: center;
 }
 
 .projectbutton {
 		background-color: lime;
+		height: inherit;
+		z-index: -1;
 }
 
 .projectbutton .arrownormal {

@@ -3,15 +3,16 @@ var projects;
 
 $.getJSON("/resources/projectlist.json", function(json) {
 		projects = json;
+		loadProject(projectNumber);
 		for (var i = 0; i < projects.length; i++) {
 				new Image().src = projects[i].image;
 		}
-		loadProject(projectNumber);
 });
 
 function loadProject(number) {
 		var project = projects[number];
-		$("#projectimage").attr("src", project.image);
+		// $("#projectimage").attr("src", project.image);
+		$("#imagesection").css("background-image", "url(" +project.image +")");
 		$("#projecttitle").text(project.title);
 		$("#projectdescription").html(project.description);
 		animateTyping($(".typetarget"));
