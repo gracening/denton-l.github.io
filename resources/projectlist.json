@@ -1,12 +1,12 @@
 [
 		{
 				"image": "http://lorempixel.com/1000/1000",
-				"title": "Test",
+				"title": "TestThisIsASuperLongTitleLongTitle",
 				"description": "<p>This is a test project.</p>"
 		},
 		{
 				"image": "http://lorempixel.com/300/200",
-				"title": "Test2",
+				"title": "ThisIsASuperLongTitleWowYeahCoolStuff",
 				"description": "<p>2This is a test project.</p>"
 		}
 ]

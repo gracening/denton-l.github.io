@@ -8,11 +8,10 @@
 .projectbutton {
 		background-color: lime;
 		height: inherit;
-		z-index: -1;
 }
 
 .projectbutton .arrownormal {
-		display: block;
+		display: inline;
 }
 
 .projectbutton .arrowhover {
@@ -24,7 +23,7 @@
 }
 
 .projectbutton:hover .arrowhover {
-		display: block;
+		display: inline;
 }
 
 #leftbutton {
@@ -33,4 +32,13 @@
 
 #rightbutton {
 		float: right;
+}
+
+#sameline {
+		margin: 1em 0;
+		text-align: left;
+}
+
+#sameline h2 {
+		display: inline;
 }

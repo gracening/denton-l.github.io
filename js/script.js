@@ -1,6 +1,7 @@
 var _objects;
 var _strings;
 var _interval;
+var notStopped = false;
 
 window.onload = function() {
 	animateTyping(document.getElementsByClassName("typetarget"));
@@ -40,9 +41,12 @@ function type(objects, strings) {
 }
 
 function stopTyping() {
-	clearInterval(_interval);
-	for (var i = 0; i < _objects.length; i++) {
-		_objects[i].innerText = _strings[i];
-	}
-	_objects[_objects.length - 1].innerHTML += "<span id=\"cursor\">&#9608;</span>";
+		if (notStopped) {
+			notStopped = false;
+			clearInterval(_interval);
+			for (var i = 0; i < _objects.length; i++) {
+				_objects[i].innerText = _strings[i];
+			}
+			_objects[_objects.length - 1].innerHTML += "<span id=\"cursor\">&#9608;</span>";
+		}
 }

@@ -11,7 +11,8 @@ $.getJSON("/resources/projectlist.json", function(json) {
 
 function loadProject(number) {
 		var project = projects[number];
-		// $("#projectimage").attr("src", project.image);
+		notStopped = true;
+		stopTyping();
 		$("#imagesection").css("background-image", "url(" +project.image +")");
 		$("#projecttitle").text(project.title);
 		$("#projectdescription").html(project.description);
