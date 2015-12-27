@@ -33,12 +33,3 @@
 #rightbutton {
 		float: right;
 }
-
-#sameline {
-		margin: 1em 0;
-		text-align: left;
-}
-
-#sameline h2 {
-		display: inline;
-}
