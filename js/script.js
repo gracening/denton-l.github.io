@@ -3,7 +3,7 @@ var _strings;
 var _interval;
 
 window.onload = function() {
-	animateTyping($(".typetarget"));
+	animateTyping(document.getElementsByClassName("typetarget"));
 }
 
 window.onclick = stopTyping;
