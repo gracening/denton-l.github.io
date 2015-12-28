@@ -1,5 +1,4 @@
-var _objects;
-var _strings;
+var _typeobjects;
 var _interval;
 var notStopped = false;
 
@@ -13,28 +12,29 @@ function animateTyping(objects) {
 	if (objects.length <= 0) {
 		return;
 	}
-	var strings = [];
+	var typeobjects = [];
 	for (var i = 0; i < objects.length; i++) {
-		strings[i] = objects[i].innerText;
+		typeobjects[i] = {
+				object: objects[i],
+				text: objects[i].innerText
+		};
 		objects[i].innerText = "";
 	}
-	_objects = [].slice.call(objects);
-	_strings = [].slice.call(strings);
-	type([].slice.call(objects), strings);	
+	_typeobjects = typeobjects;
+	type(typeobjects);	
 }
 
-function type(objects, strings) {
+function type(typeobjects) {
 	var i = 0;
 	var interval = _interval = setInterval(function() {
-			objects[0].innerText = strings[0].substring(0, ++i);
-			objects[0].innerHTML += "<span id=\"cursor\">&#9608;</span>";
-			if (i >= strings[0].length) {
+			typeobjects[0].object.innerText = typeobjects[0].text.substring(0, ++i);
+			typeobjects[0].object.innerHTML += "<span id=\"cursor\">&#9608;</span>";
+			if (i >= typeobjects[0].text.length) {
 				clearInterval(interval);
-				if (objects.length != 1) {
-					objects[0].innerText = strings[0];
-					objects.splice(0, 1)
-					strings.splice(0, 1)
-					type(objects, strings);
+				if (typeobjects.length > 1) {
+					typeobjects[0].object.innerText = typeobjects[0].text;
+					typeobjects.splice(0, 1)
+					type(typeobjects);
 				}
 			}
 		}, 15);
@@ -44,9 +44,9 @@ function stopTyping() {
 		if (notStopped) {
 			notStopped = false;
 			clearInterval(_interval);
-			for (var i = 0; i < _objects.length; i++) {
-				_objects[i].innerText = _strings[i];
+			for (var i = 0; i < _typeobjects.length; i++) {
+				_typeobjects[i].object.innerText = _typeobjects[i].text;
 			}
-			_objects[_objects.length - 1].innerHTML += "<span id=\"cursor\">&#9608;</span>";
+			_typeobjects[_typeobjects.length - 1].object.innerHTML += "<span id=\"cursor\">&#9608;</span>";
 		}
 }
