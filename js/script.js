@@ -28,7 +28,7 @@ function type(typeobjects) {
 	var i = 0;
 	var interval = _interval = setInterval(function() {
 			typeobjects[0].object.innerText = typeobjects[0].text.substring(0, ++i);
-			typeobjects[0].object.innerHTML += "<span id=\"cursor\">&#9608;</span>";
+			typeobjects[0].object.innerHTML += "<span id=\"cursor\"></span>";
 			if (i >= typeobjects[0].text.length) {
 				clearInterval(interval);
 				if (typeobjects.length > 1) {
@@ -47,6 +47,6 @@ function stopTyping() {
 			for (var i = 0; i < _typeobjects.length; i++) {
 				_typeobjects[i].object.innerText = _typeobjects[i].text;
 			}
-			_typeobjects[_typeobjects.length - 1].object.innerHTML += "<span id=\"cursor\">&#9608;</span>";
+			_typeobjects[_typeobjects.length - 1].object.innerHTML += "<span id=\"cursor\">k/span>";
 		}
 }
