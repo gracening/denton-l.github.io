@@ -47,6 +47,6 @@ function stopTyping() {
 			for (var i = 0; i < _typeobjects.length; i++) {
 				_typeobjects[i].object.innerText = _typeobjects[i].text;
 			}
-			_typeobjects[_typeobjects.length - 1].object.innerHTML += "<span id=\"cursor\">k/span>";
+			_typeobjects[_typeobjects.length - 1].object.innerHTML += "<span id=\"cursor\"></span>";
 		}
 }
