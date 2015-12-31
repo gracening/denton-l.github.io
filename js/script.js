@@ -1,6 +1,5 @@
 var _typeobjects;
-var _interval;
-var notStopped = false;
+var _interval = -1;
 
 window.onload = function() {
 	animateTyping(document.getElementsByClassName("typetarget"));
@@ -41,9 +40,9 @@ function type(typeobjects) {
 }
 
 function stopTyping() {
-		if (notStopped) {
-			notStopped = false;
+		if (_interval != -1) {
 			clearInterval(_interval);
+			_interval = -1;
 			for (var i = 0; i < _typeobjects.length; i++) {
 				_typeobjects[i].object.innerText = _typeobjects[i].text;
 			}
