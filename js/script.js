@@ -1,11 +1,9 @@
-var _typeobjects;
-var _interval = -1;
+var _interval = 0;
 
 window.onload = function() {
+	_notStopped = true;
 	animateTyping(document.getElementsByClassName("typetarget"));
 }
-
-window.onclick = stopTyping;
 
 function animateTyping(objects) {
 	if (objects.length <= 0) {
@@ -19,7 +17,6 @@ function animateTyping(objects) {
 		};
 		objects[i].innerText = "";
 	}
-	_typeobjects = typeobjects;
 	type(typeobjects);	
 }
 
@@ -37,15 +34,4 @@ function type(typeobjects) {
 				}
 			}
 		}, 15);
-}
-
-function stopTyping() {
-		if (_interval != -1) {
-			clearInterval(_interval);
-			_interval = -1;
-			for (var i = 0; i < _typeobjects.length; i++) {
-				_typeobjects[i].object.innerText = _typeobjects[i].text;
-			}
-			_typeobjects[_typeobjects.length - 1].object.innerHTML += "<span id=\"cursor\"></span>";
-		}
 }
