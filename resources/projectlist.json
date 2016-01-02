@@ -2,7 +2,7 @@
 		{
 				"image": "/images/Java-Webchat.png",
 				"title": "Java-Webchat",
-				"description": "<p>This is a test project.</p>"
+				"description": "<p>Java-Webchat is a lightweight RMI-based chat interface designed to be small and portable. It allows multiple clients to chat with each other through a central server.</p><p>Java-Webchat was a final project for ICS4U1, grade 12 computer science, which culminated all of the knowledge learned through the course. It features the use of JavaFX because it created a modern and very aesthetically pleasing design. </p><p><a href=\"https://github.com/Denton-L/Java-Webchat\">Find the source for this project here!</a></p>"
 		},
 		{
 				"image": "http://lorempixel.com/300/200",
