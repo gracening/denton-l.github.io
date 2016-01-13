@@ -2,11 +2,11 @@
 		{
 				"image": "/images/Java-Webchat.png",
 				"title": "Java-Webchat",
-				"description": "<p>Java-Webchat is a lightweight RMI-based chat interface designed to be small and portable. It allows multiple clients to chat with each other through a central server.</p><p>Java-Webchat was a final project for ICS4U1, grade 12 computer science, which culminated all of the knowledge learned through the course. It features the use of JavaFX because it created a modern and very aesthetically pleasing design. </p><p><a href=\"https://github.com/Denton-L/Java-Webchat\">Find the source for this project here!</a></p>"
+				"description": "<p>Java-Webchat is a lightweight RMI-based chat interface designed to be small and portable. It allows multiple clients to chat with each other through a central server.</p><p>Java-Webchat was a final project for grade twelve computer science, ICS4U1, which culminated all of the knowledge learned through the course. It features the use of JavaFX because it created a modern and very aesthetically pleasing design. </p><p><a href=\"https://github.com/Denton-L/Java-Webchat\">Find the source for this project here!</a></p>"
 		},
 		{
-				"image": "http://lorempixel.com/300/200",
-				"title": "ThisIsASuperLongTitleWowYeahCoolStuff",
-				"description": "<p>2This is a test project.</p>"
+				"image": "/images/BreadboardComputer.png",
+				"title": "Breadboard Computer",
+				"description": "<p>This Breadboard Computer was built as a learning experience. It is based upon the 6502 which was an 8-bit microprocessor which was very prolific in its time although it continues to be used today.</p><p>Using only ICs (integrated circuits), and an assortment of wiring, we were able to build this computer.</p>"
 		}
 ]
