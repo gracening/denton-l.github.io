@@ -7,6 +7,6 @@
 		{
 				"image": "/images/BreadboardComputer.png",
 				"title": "Breadboard Computer",
-				"description": "<p>This Breadboard Computer was built as a learning experience. It is based upon the 6502 which was an 8-bit microprocessor which was very prolific in its time although it continues to be used today.</p><p>Using only ICs (integrated circuits), and an assortment of wiring, we were able to build this computer.</p>"
+				"description": "<p>This Breadboard Computer was built as a learning experience. It is based upon the 6502 which was an 8-bit microprocessor which was very prolific in its time although it continues to be used today.</p><p>This computer was built using only IC (integrated circuit) chips and an assortment of wires. It also incorporated an 8 KB EEPROM chip which was where the ROM was stored, a 32 KB RAM chip to hold the volatile memory and various other elements to \"glue\" everything together.</p>"
 		}
 ]
