@@ -70,6 +70,15 @@ footer {
 	padding: 2em;
 }
 
+.leftimage {
+	float: left;
+	padding: 2em;
+}
+
+.column {
+	display: table;
+}
+
 .typetarget::after {
 	content: "\A0";
 	display: inline-block;
