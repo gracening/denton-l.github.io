@@ -1,3 +1,7 @@
+html, body {
+	min-width: 56em;
+}
+
 #content {
 	margin: 3em;
 }
