@@ -17,7 +17,7 @@ function animateTyping(objects) {
 		};
 		objects[i].innerText = "";
 	}
-	type(typeobjects);	
+	type(typeobjects);
 }
 
 function type(typeobjects) {
