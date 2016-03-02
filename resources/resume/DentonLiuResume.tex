@@ -1,0 +1,87 @@
+\documentclass[10pt,sans,letterpaper]{moderncv}
+
+\usepackage[margin=0.5in]{geometry}
+
+\moderncvstyle{classic}
+\moderncvcolor{orange}
+\moderncvicons{awesome}
+
+\setlength{\hintscolumnwidth}{1in}
+
+\name{Denton}{Liu}
+\title{Software Engineering}
+\phone{(647) 739-9932}
+\email{denton.liu@uwaterloo.ca}
+\homepage{dentonliu.me}
+\social[linkedin]{DentonL}
+\social[github]{Denton-L}
+
+\begin{document}
+\makecvtitle
+
+\section{Summary of Qualifications}
+\cvlistitem{Proficient in Java, C, C++ and various assembly languages.}
+\cvlistitem{Enjoys working in and understanding low-level environments such as embedded systems.}
+\cvlistitem{Familiar with building websites using HTML5, CSS3 and JavaScript.}
+\cvlistitem{Adept with Linux and common applications such as Git and GDB.}
+
+\section{Projects}
+\cvitem{LAByrinth}{
+	\begin{itemize}
+		\item{Created a labyrinth game using an Arduino-like microcontroller with C.}
+		\item{Utilised both serial and parallel I/O to communicate with peripherals.}
+		\item{Wrote an abstraction layer over hardware in order simplify higher-level development.}
+	\end{itemize}
+}\vspace{-0.5\baselineskip}
+\cvitem{Breadboard Computer}{
+	\begin{itemize}
+		\item{Created a computer based on the 6502 processor on a breadboard using only ICs (integrated circuits).}
+		\item{Programmed a version of Pong using 6502 assembly.}
+		\item{Utilised an EEPROM programmer to load an assembled hex image.}
+	\end{itemize}
+}\vspace{-0.5\baselineskip}
+\cvitem{Java-Webchat}{
+	\begin{itemize}
+		\item{Employed RMI (Remote Method Invocation) to communicate between server and clients.}
+		\item{Implemented a user database which took precautions to secure user data using salted hashes.}
+		\item{Made use of object-oriented programming principles in order to create a cleaner codebase.}
+	\end{itemize}
+}\vspace{-\baselineskip}
+
+\section{Experience}
+\cventry{2014}{IT Volunteer}{Administration}{Newcomer Centre of Peel}{}{
+	\begin{itemize}
+		\item{Created tool to backup user data using Windows Batch scripting.}
+		\item{Acted as system administrator.}
+		\item{Provided technical assistance to employees.}
+	\end{itemize}
+}
+\cventry{2010--2015}{Cadet Warrant Officer}{Royal Canadian Air Cadets}{700 David Hornell VC Squadron}{}{
+	\begin{itemize}
+		\item{Planned and organised events, such as training weekends, as a member of a team.}
+		\item{Captained the drill team consisting of the squadron's most successful cadets.}
+		\item{Commanded over 120 peers during graduation parade of Drill and Ceremonial Instructors Course.}
+	\end{itemize}
+}
+
+\section{Education}
+\cventry{2015--2020}{Candidate for Bachelors of Software Engineering}{University of Waterloo}{Waterloo, Ontario}{}{
+	\textit{Cumulative GPA}: 3.85 
+}
+\cventry{2011--2015}{Ontario Secondary School Diploma}{Martingrove Collegiate Institute}{Toronto, Ontario}{}{
+	\textit{Academic Average}: 95.0\%
+}
+
+\section{Awards and Scholarships}
+\cvitemwithcomment{2015}{Sandford Fleming Foundation Programming Competition Award}{Second Place}
+\cvitemwithcomment{2015}{Dean's Honours List at University of Waterloo}{Term Average of 87\% or Greater}
+\cvitemwithcomment{2014}{University of Toronto High School Design Competition}{First Place}
+
+\section{Interests and Hobbies}
+\cvlistitem{Plays cello, double bass and piano.}
+\cvlistitem{Avid unicyclist.}
+\cvlistitem{Fanatical user of \LaTeX.}
+\cvlistitem{Proud Vim user.}
+\cvlistitem{Runs Arch Linux on personal computer.}
+
+\end{document}
