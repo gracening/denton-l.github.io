@@ -1,3 +1,4 @@
-[submodule "resources/Resume"]
-	path = resources/Resume
-	url = https://github.com/Denton-L/Resume.git
+[submodule "resources/resume"]
+	path = resources/resume
+	url = https://github.com/Denton-L/resume.git
+	branch = build
