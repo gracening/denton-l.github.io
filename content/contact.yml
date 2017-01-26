@@ -1,0 +1,21 @@
+---
+title: Contact
+pages:
+    - name: Home
+      link: /
+    - name: About
+      link: /about.html
+    - name: Projects
+      link: /projects.html
+    - name: Contact
+      link: /contact.html
+      selected: true
+
+contacts:
+    - name: GitHub
+      link: https://github.com/Denton-L/
+    - name: LinkedIn
+      link: https://www.linkedin.com/in/DentonL
+    - name: Email
+      link: mailto:denton.liu@uwaterloo.ca
+---

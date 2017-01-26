@@ -1,0 +1,18 @@
+---
+title: Projects
+additionalHeadMaterial: |
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="/css/projects.css" />
+    <script src="/js/projects.js"></script>
+
+pages:
+    - name: Home
+      link: /
+    - name: About
+      link: /about.html
+    - name: Projects
+      link: /projects.html
+      selected: true
+    - name: Contact
+      link: /contact.html
+---
