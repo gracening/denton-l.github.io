@@ -1,0 +1,18 @@
+dist: trusty
+before_install: gem install mustache
+script: make all
+
+env:
+    global:
+        - GIT_NAME="Denton Liu"
+        - GIT_EMAIL="liu.denton@gmail.com"
+        - GIT_URL="git@github.com:Denton-L/denton-l.github.io.git"
+        - ENCRYPTION_LABEL="4a1ac78fb936"
+        - KEY_LOCATION=".travis/deploy_key"
+
+deploy:
+    provider: script
+    script: .travis/deploy.bash
+    skip_cleanup: true
+    on:
+        branch: develop
