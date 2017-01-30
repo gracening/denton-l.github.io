@@ -15,4 +15,38 @@ pages:
       selected: true
     - name: Contact
       link: /contact.html
+
+projects:
+    - title: Java-Webchat
+      id: javawebchat
+      image: /images/Java-Webchat.png
+      description:
+          - paragraph: |
+              Java-Webchat was a lightweight RMI-based chat interface designed to be small and portable. It allowed multiple clients to chat with each other through a central server.
+          - paragraph: |
+              Since Java-Webchat incorporated a database of users, precautions had to be taken in order to secure user data. As such, user data was encrypted using a one-way hash (SHA-256) which was salted. At the time of creation for this project, this was the industry standard. In addition to this, JavaFX was used as the GUI library as it produced a very clean and modern design.
+          - paragraph: |
+              <a href="https://github.com/Denton-L/Java-Webchat" target="_blank">Find the source for this project here!</a>
+    - title: Breadboard Computer
+      id: breadboardcomputer
+      image: /images/BreadboardComputer.png
+      description:
+          - paragraph: |
+              This Breadboard Computer was built as a learning experience. The core of the project is an 8-bit microprocessor, the 6502. This project required both software and hardware skills in order to complete.
+          - paragraph: |
+              For the software component of this project, the game of Pong was recreated as a tribute to the early pioneers of video games, which was influenced heavily by the 6502. The initial structure of the game was written up in C in order to provide an initial starting point. After that, it was hand-compiled down to 6502-assembly. After, the assembled hex image was loaded using an EEPROM programmer.
+          - paragraph: |
+              The hardware of the project consisted of various integrated circuit chips connected together with wires. The ROM is provided by an 8 KB EEPROM chip with the write-pin disabled. The RAM is provided by a dedicated 32 KB RAM chip. Finally, the display was a simple 128&times;64 LCD screen driven using a Versatile Interface Adaptor.
+          - paragraph: |
+              Since all of the addresses were determined using by the wiring from the CPU, the assembled code is specific to this project and thus won't be compatible with any other architecture. The model written in C can be found <a href=\"https://gist.github.com/Denton-L/2001008725782283389c\" target=\"_blank\">here</a>.
+    - title: LAByrinth
+      id: labyrinth
+      image: /images/LAByrinth.png
+      description:
+          - paragraph: |
+              LAByrinth was a digital implementation of the popular tabletop game of similar name. It was centred around an Arduino clone, the <a href=\"https://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html\">TI C Series Launchpad</a>, and the Orbit Boosterpack which was a module provided to extend the capabilities of the microcontroller.
+          - paragraph: |
+              For the Orbit Boosterpack, the only documentation which was provided was some sample code. As a result, an abstraction layer had to be carefully created on top of the hardware in order to make developing the game logic simpler. While most components (switches, buttons, analog-to-digital converter) involved only parallel communication, one challenge was working with the accelerometer which only used I<sup>2</sup>C serial communication.
+          - paragraph: |
+                  <a href=\"https://github.com/DSouzaM/LAByrinth\"></a>
 ---

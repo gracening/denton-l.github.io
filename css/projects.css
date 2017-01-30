@@ -2,37 +2,38 @@ html, body {
 	min-width: 70em;
 }
 
-#imagesection {
-		height: 30em;
-		background-size: auto 100%;
-		background-repeat: no-repeat;
-		background-position: center;
+.imagesection {
+	height: 30em;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .projectbutton {
-		height: inherit;
+	height: inherit;
+	display: none;
 }
 
 .projectbutton .arrownormal {
-		display: inline;
+	display: inline;
 }
 
 .projectbutton .arrowhover {
-		display: none;
+	display: none;
 }
 
 .projectbutton:hover .arrownormal {
-		display: none;
+	display: none;
 }
 
 .projectbutton:hover .arrowhover {
-		display: inline;
+	display: inline;
 }
 
 #leftbutton {
-		float: left;
+	float: left;
 }
 
 #rightbutton {
-		float: right;
+	float: right;
 }

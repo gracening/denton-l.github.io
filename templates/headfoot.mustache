@@ -8,19 +8,20 @@
 		<script src="/js/script.js" defer></script>
 		{{{additionalHeadMaterial}}}
 	</head>
-	<body><div id="outerwrapper">
-		<header>
-			<ul class="horizontallist">
-				{{#pages}}
-				<a href="{{link}}"><li class="button{{#selected}} selected{{/selected}}">{{name}}</li></a>
-				{{/pages}}
-				<a href="/resume/DentonLiuResume.pdf" target="_blank"><li class="button">R&eacute;sum&eacute;</li></a>
-			</ul>
-		</header>
-		<div id="content">
+	<body>
+		<div id="outerwrapper">
+			<header>
+				<ul class="horizontallist">
+					{{#pages}}
+					<a href="{{link}}"><li class="button{{#selected}} selected{{/selected}}">{{name}}</li></a>
+					{{/pages}}
+					<a href="/resume/DentonLiuResume.pdf" target="_blank"><li class="button">R&eacute;sum&eacute;</li></a>
+				</ul>
+			</header>
+			<div id="content">
 {{> headfootPart}}
-		</div>
-		<div id="footerspacer"></div></div>
+			</div>
+			<div id="footerspacer"></div></div>
 		<footer>
 			<ul class="horizontallist">
 				<li><a href="https://github.com/Denton-L/" target="_blank"><img src="/images/github.png" alt="Github Profile" height=32 /></a></li>
