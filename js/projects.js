@@ -13,6 +13,7 @@ function changeProject(delta) {
 	var nextProject = (_projectNumber + delta + _projects.length) % _projects.length;
 	loadProject(nextProject, _projectNumber);
 	_projectNumber = nextProject;
+	window.location.hash = _projects[_projectNumber].id;
 }
 
 window.addEventListener("load", function () {
