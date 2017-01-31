@@ -11,6 +11,7 @@ function animateTyping(objects) {
 			text: objects[i].innerText
 		};
 		objects[i].innerText = "";
+		objects[i].innerHTML = "<span class=\"filler\"></span>";
 	}
 	type(typeobjects);
 }
