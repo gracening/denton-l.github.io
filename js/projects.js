@@ -2,10 +2,10 @@ var _projects;
 var _projectNumber;
 
 function loadProject(next, previous) {
-	_projects[next].style.display = "inherit";
 	if (previous !== undefined) {
 		_projects[previous].style.display = "none";
 	}
+	_projects[next].style.display = "inherit";
 	animateTyping([_projects[next].querySelector(".projecttitle")]);
 }
 
