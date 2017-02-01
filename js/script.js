@@ -32,6 +32,6 @@ function type(typeobjects) {
 	}, 15);
 }
 
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
 	animateTyping(document.querySelectorAll(".typetarget"));
 });
