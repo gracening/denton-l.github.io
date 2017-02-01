@@ -16,7 +16,7 @@ function changeProject(delta) {
 	window.location.hash = _projects[_projectNumber].id;
 }
 
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
 	var buttons = document.querySelectorAll(".projectbutton");
 	for (var i = 0; i < buttons.length; i++) {
 		buttons[i].style.display = "inherit";
