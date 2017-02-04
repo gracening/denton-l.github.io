@@ -21,6 +21,7 @@ function type(typeobjects) {
 	var interval = _interval = setInterval(function () {
 		typeobjects[0].object.innerText = typeobjects[0].text.substring(0, ++i);
 		typeobjects[0].object.innerHTML += "<span id=\"cursor\"></span>";
+		typeobjects[0].object.innerHTML += "<span class=\"filler\"></span>".repeat(typeobjects[0].text.length - i);
 		if (i >= typeobjects[0].text.length) {
 			clearInterval(interval);
 			if (typeobjects.length > 1) {

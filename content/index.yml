@@ -1,7 +1,7 @@
 ---
 title: Software Developer
 additionalHeadMaterial: |
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/boxcontent.css" />
 
 pages:
     - name: Home
@@ -13,4 +13,25 @@ pages:
       link: /projects.html
     - name: Contact
       link: /contact.html
+
+asciiart: |
+    ######  ####### #     # ####### ####### #     #    #       ### #     #
+    #     # #       ##    #    #    #     # ##    #    #        #  #     #
+    #     # #       # #   #    #    #     # # #   #    #        #  #     #
+    #     # #####   #  #  #    #    #     # #  #  #    #        #  #     #
+    #     # #       #   # #    #    #     # #   # #    #        #  #     #
+    #     # #       #    ##    #    #     # #    ##    #        #  #     #
+    ######  ####### #     #    #    ####### #     #    ####### ###  #####&nbsp;
+
+subtitle:
+    text:
+        Software Developer
+
+paragraphs:
+    paragraph: |
+        I am a student at the University of Waterloo studying Software Engineering!
+
+button:
+    link: /about.html
+    text: Learn more!
 ---
