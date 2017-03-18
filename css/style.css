@@ -79,20 +79,18 @@ footer {
 	display: table;
 }
 
+.typetarget::after {
+	content: "\A0";
+	display: inline-block;
+}
+
 @keyframes blink {
 	0%, 100% {opacity: 1;}
 	50% {opacity: 0;}
 }
 
-.filler::after {
-	content: "\2587";
-	color: black;
-	display: inline-block;
-	text-decoration: none;
-}
-
 #cursor::after {
-	content: "\2587";
+	content: "\2588";
 	animation-name: blink;
 	animation-duration: 1s;
 	animation-timing-function: steps(1);
