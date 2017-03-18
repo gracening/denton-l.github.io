@@ -16,7 +16,6 @@ hr {
 	border: 1px dashed lime;
 }
 
-
 header {
 	text-align: right;
 	padding-bottom: 1em;
@@ -90,7 +89,7 @@ footer {
 }
 
 #cursor::after {
-	content: "\2588";
+	content: "\2587";
 	animation-name: blink;
 	animation-duration: 1s;
 	animation-timing-function: steps(1);
