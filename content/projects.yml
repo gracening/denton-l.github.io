@@ -37,7 +37,7 @@ projects:
           - paragraph: |
               The hardware of the project consisted of various integrated circuit chips connected together with wires. The ROM is provided by an 8 KB EEPROM chip with the write-pin disabled. The RAM is provided by a dedicated 32 KB RAM chip. Finally, the display was a simple 128&times;64 LCD screen driven using a Versatile Interface Adaptor.
           - paragraph: |
-              Since all of the addresses were determined using by the wiring from the CPU, the assembled code is specific to this project and thus won't be compatible with any other architecture. The model written in C can be found <a href=\"https://gist.github.com/Denton-L/2001008725782283389c\" target=\"_blank\">here</a>.
+              Since all of the addresses were determined using by the wiring from the CPU, the assembled code is specific to this project and thus won't be compatible with any other architecture. The model written in C can be found <a href="https://gist.github.com/Denton-L/2001008725782283389c" target="_blank">here</a>.
     - title: LAByrinth
       id: labyrinth
       image: /images/LAByrinth.png
