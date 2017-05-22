@@ -16,6 +16,16 @@ pages:
       link: /contact.html
 
 projects:
+    - title: Cryptocurrency Market Making
+      id: cryptocurrencymarketmaking
+      image: /images/CryptocurrencyMarketMaking.png
+      description:
+          - paragraph: |
+              Cryptocurrency Market Making is an algorithm trading project. It trades cryptocurrencies on <a href="https://poloniex.com/">Poloniex</a>. Since its inception, it's given returns of 10%/month, on average.
+          - paragraph: |
+              It was written in Python 3 and was robustly backtested in order to maximise the chances of success. In fact, we reimplemented Poloniex's APIs locally in order to accurately test the algorithm. It is currently running on a secure Raspberry Pi server, of which I am the sysadmin.
+          - paragraph: |
+              Unfortunately, due to the nature of this project, the source code is not available.
     - title: Java-Webchat
       id: javawebchat
       image: /images/Java-Webchat.png
@@ -37,7 +47,7 @@ projects:
           - paragraph: |
               The hardware of the project consisted of various integrated circuit chips connected together with wires. The ROM is provided by an 8 KB EEPROM chip with the write-pin disabled. The RAM is provided by a dedicated 32 KB RAM chip. Finally, the display was a simple 128&times;64 LCD screen driven using a Versatile Interface Adaptor.
           - paragraph: |
-              Since all of the addresses were determined using by the wiring from the CPU, the assembled code is specific to this project and thus won't be compatible with any other architecture. The model written in C can be found <a href=\"https://gist.github.com/Denton-L/2001008725782283389c\" target=\"_blank\">here</a>.
+              Since all of the addresses were determined using by the wiring from the CPU, the assembled code is specific to this project and thus won't be compatible with any other architecture. The model written in C can be found <a href="https://gist.github.com/Denton-L/2001008725782283389c" target="_blank">here</a>.
     - title: LAByrinth
       id: labyrinth
       image: /images/LAByrinth.png
