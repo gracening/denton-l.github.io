@@ -21,7 +21,7 @@ projects:
       image: /images/CryptocurrencyMarketMaking.png
       description:
           - paragraph: |
-              Cryptocurrency Market Making is an algorithm trading project. It trades cryptocurrencies on <a href="https://poloniex.com/">Poloniex</a>. Since its inception, it's given returns of 10%/month, on average.
+              Cryptocurrency Market Making is an algorithm trading project. It trades cryptocurrencies on <a href="https://poloniex.com/">Poloniex</a>. Since its inception, it's given returns of 8.8%/month, on average.
           - paragraph: |
               It was written in Python 3 and was robustly backtested in order to maximise the chances of success. In fact, we reimplemented Poloniex's APIs locally in order to accurately test the algorithm. It is currently running on a secure Raspberry Pi server, of which I am the sysadmin.
           - paragraph: |
