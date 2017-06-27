@@ -12,6 +12,7 @@ html, body {
 .projectbutton {
 	height: inherit;
 	display: none;
+	cursor: pointer;
 }
 
 .projectbutton .arrownormal {
