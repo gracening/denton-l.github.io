@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Denton Liu - Projects</title>
+		<meta charset="UTF-8">
+		<link rel="icon" href="/resources/favicon.ico" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/js/script.js" defer></script>
+		<link rel="stylesheet" href="/css/projects.css" />
+<script src="/js/projects.js"></script>
+
+	</head>
+	<body>
+		<div id="outerwrapper">
+			<header>
+				<ul class="horizontallist">
+					<a href="/"><li class="button">Home</li></a>
+					<a href="/about.html"><li class="button">About</li></a>
+					<a href="/projects.html"><li class="button selected">Projects</li></a>
+					<a href="/contact.html"><li class="button">Contact</li></a>
+					<a href="/resume/DentonLiuResume.pdf" target="_blank"><li class="button">R&eacute;sum&eacute;</li></a>
+				</ul>
+			</header>
+			<div id="content">
+<h1>Projects</h1>
+<hr />
+<div>
+<div>
+	<span id="leftbutton" class="projectbutton" onclick="changeProject(-1)">
+		<img src="/images/leftchevron.svg" class="arrownormal" alt="<" />
+		<img src="/images/invertleftchevron.svg" class="arrowhover" alt="<" />
+	</span>
+	<span id="rightbutton" class="projectbutton" onclick="changeProject(1)">
+		<img src="/images/rightchevron.svg" class="arrownormal" alt=">" />
+		<img src="/images/invertrightchevron.svg" class="arrowhover" alt=">" />
+	</span>
+		<div id="cryptocurrencymarketmaking" class="project">
+			<div class="imagesection" style="background-image: url(/images/CryptocurrencyMarketMaking.png)"></div>
+			<br />
+			<hr />
+			<h2 class="projecttitle">Cryptocurrency Market Making</h2>
+				<p>Cryptocurrency Market Making is an algorithm trading project. It trades cryptocurrencies on <a href="https://poloniex.com/">Poloniex</a>. Since its inception, it's given returns of 8.8%/month, on average.
+</p>
+				<p>It was written in Python 3 and was robustly backtested in order to maximise the chances of success. In fact, we reimplemented Poloniex's APIs locally in order to accurately test the algorithm. It is currently running on a secure Raspberry Pi server, of which I am the sysadmin.
+</p>
+				<p>Unfortunately, due to the nature of this project, the source code is not available.
+</p>
+		</div>
+		<div id="javawebchat" class="project">
+			<div class="imagesection" style="background-image: url(/images/Java-Webchat.png)"></div>
+			<br />
+			<hr />
+			<h2 class="projecttitle">Java-Webchat</h2>
+				<p>Java-Webchat was a lightweight RMI-based chat interface designed to be small and portable. It allowed multiple clients to chat with each other through a central server.
+</p>
+				<p>Since Java-Webchat incorporated a database of users, precautions had to be taken in order to secure user data. As such, user data was encrypted using a one-way hash (SHA-256) which was salted. At the time of creation for this project, this was the industry standard. In addition to this, JavaFX was used as the GUI library as it produced a very clean and modern design.
+</p>
+				<p><a href="https://github.com/Denton-L/Java-Webchat" target="_blank">Find the source for this project here!</a>
+</p>
+		</div>
+		<div id="breadboardcomputer" class="project">
+			<div class="imagesection" style="background-image: url(/images/BreadboardComputer.png)"></div>
+			<br />
+			<hr />
+			<h2 class="projecttitle">Breadboard Computer</h2>
+				<p>This Breadboard Computer was built as a learning experience. The core of the project is an 8-bit microprocessor, the 6502. This project required both software and hardware skills in order to complete.
+</p>
+				<p>For the software component of this project, the game of Pong was recreated as a tribute to the early pioneers of video games, which was influenced heavily by the 6502. The initial structure of the game was written up in C in order to provide an initial starting point. After that, it was hand-compiled down to 6502-assembly. After, the assembled hex image was loaded using an EEPROM programmer.
+</p>
+				<p>The hardware of the project consisted of various integrated circuit chips connected together with wires. The ROM is provided by an 8 KB EEPROM chip with the write-pin disabled. The RAM is provided by a dedicated 32 KB RAM chip. Finally, the display was a simple 128&times;64 LCD screen driven using a Versatile Interface Adaptor.
+</p>
+				<p>Since all of the addresses were determined using by the wiring from the CPU, the assembled code is specific to this project and thus won't be compatible with any other architecture. The model written in C can be found <a href="https://gist.github.com/Denton-L/2001008725782283389c" target="_blank">here</a>.
+</p>
+		</div>
+		<div id="labyrinth" class="project">
+			<div class="imagesection" style="background-image: url(/images/LAByrinth.png)"></div>
+			<br />
+			<hr />
+			<h2 class="projecttitle">LAByrinth</h2>
+				<p>LAByrinth was a digital implementation of the popular tabletop game of similar name. It was centred around an Arduino clone, the <a href=\"https://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html\">TI C Series Launchpad</a>, and the Orbit Boosterpack which was a module provided to extend the capabilities of the microcontroller.
+</p>
+				<p>For the Orbit Boosterpack, the only documentation which was provided was some sample code. As a result, an abstraction layer had to be carefully created on top of the hardware in order to make developing the game logic simpler. While most components (switches, buttons, analog-to-digital converter) involved only parallel communication, one challenge was working with the accelerometer which only used I<sup>2</sup>C serial communication.
+</p>
+				<p><a href=\"https://github.com/DSouzaM/LAByrinth\"></a>
+</p>
+		</div>
+</div>
+</div>
+			</div>
+			<div id="footerspacer"></div></div>
+		<footer>
+			<ul class="horizontallist">
+				<li><a href="https://github.com/Denton-L/" target="_blank"><img src="/images/github.png" alt="Github Profile" height=32 /></a></li>
+				<li><a href="https://www.linkedin.com/in/DentonL" target="_blank"><img src="/images/linkedin.png" alt="LinkedIn Profile" height=32 /></a></li>
+			</ul>
+			<div id="otherperson">If you're not interested in me, check out <a href="http://arashrai.com:5000/randomSEwebsite">this person</a>!</div>
+			<div id="copyright">&copy; Denton Liu, 2017</div>
+		</footer>
+	</body>
+</html>
