@@ -13,7 +13,7 @@ pages:
 
 paragraphs:
     - paragraph: |
-        Hello, my name is Denton Liu and I am a student studying Software Engineering at the University of Waterloo! As a developer, I have an interest in embedded systems, security and back-end development. And I hate front-end development.
+        Hello, my name is Denton Liu and I am a student studying Software Engineering at the University of Waterloo! As a developer, I have an interest in embedded systems and security. And I hate front-end development.
     - paragraph: |
         In Winter 2017, I worked at <a href="http://cask.co/">Cask Data</a> in Palo Alto, California. At Cask, I was responsible for improving and fixing bugs on <a href="http://cask.co/products/cdap/">CDAP</a>. In addition to this, I worked on some other smaller projects, including implementing an optimiser for Cask Wrangler which removed any unnecessary steps to speed up execution.
     - paragraph: |
